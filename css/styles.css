@@ -305,8 +305,50 @@ template {
 [hidden] {
   display: none; }
 
+.btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  width: 100%;
+  display: block;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  padding: 0.7em 0;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 5px; }
+
+.btn--default {
+  background-color: #58e1c1; }
+
+.btn--success {
+  background-color: #63cc82; }
+
+.btn--error {
+  background-color: #e4757a; }
+
+.btn--warning {
+  background-color: #fd7856; }
+
+.btn--info {
+  background-color: #927bc1; }
+
 .card {
   margin: 1em 0; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+  .form .form__label {
+    font-family: "Dosis", sans-serif;
+    font-weight: bold; }
+    .form .form__label--hidden {
+      display: none; }
+  .form input[type="text"], .form input[type="password"] {
+    margin-bottom: 20px;
+    border: 0px solid red;
+    border-bottom: 5px solid #58e1c1;
+    padding: 1em 20px; }
 
 .container {
   width: 90%;
@@ -320,6 +362,16 @@ template {
 .img--logo {
   margin: 20px auto;
   display: block; }
+
+.img--avatar {
+  margin: 20px auto;
+  display: block; }
+
+.img--frame {
+  margin: 20px auto;
+  display: block;
+  border: 1px solid lightgrey;
+  padding: 0.7em; }
 
 .nav {
   display: flex;
@@ -340,23 +392,34 @@ template {
 .link {
   color: #54defc;
   font-weight: bold;
+  font-size: 1.1em;
   font-family: "Dosis", sans-serif;
   text-decoration: none; }
 
 .nav__item a {
   font-family: "Dosis", sans-serif; }
 
-.card h1 {
+.headline--primary {
   color: #58e1c1;
+  font-weight: bold;
+  padding-left: 1em;
   font-family: "Dosis", sans-serif; }
 
-.card h4 {
+.headline--secondary {
   color: #888;
-  font-family: "Dosis", sans-serif; }
+  font-weight: 300;
+  font-family: "Lato", sans-serif; }
 
 .card p {
   font-family: "Lato", sans-serif;
   color: #888;
   line-height: 1.4; }
+
+.blockquote {
+  font-size: 1.6em;
+  color: #888;
+  font-family: "Lato", sans-serif;
+  border-left: 6px solid #58e1c1;
+  padding-left: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
