@@ -2,9 +2,16 @@
   display:flex;
   flex-direction: column;
 
+
   @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 30px;
   }
+}
+
+nav {
+  margin-left: auto;
 }
 
 .nav__item {

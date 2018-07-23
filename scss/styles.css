@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 ul {
@@ -314,12 +316,12 @@ template {
   font-weight: bold;
   font-family: "Lato", sans-serif;
   padding: 0.7em 0;
-  margin: 20px 0;
+  margin: 10px 0;
   cursor: pointer;
   border-radius: 5px; }
   @media (min-width: 768px) {
     .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
-      display: inline;
+      display: inline-block;
       width: 20%; } }
 
 .btn--default {
@@ -368,7 +370,13 @@ template {
 
 .grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
   display: flex;
-  flex-direction: column; }
+  padding: 0.7em;
+  border-radius: 5px;
+  flex-direction: column;
+  margin: 0 10px; }
+  @media (min-width: 768px) {
+    .grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
+      flex-direction: row; } }
 
 .grid__col--1 {
   flex: 1 8.3333333333%; }
@@ -406,6 +414,42 @@ template {
 .grid__col--12 {
   flex: 1 100%; }
 
+.grid__col--1.theme__colors {
+  background-color: #ffa047; }
+
+.grid__col--2.theme__colors {
+  background-color: #ffde47; }
+
+.grid__col--3.theme__colors {
+  background-color: #e3ff47; }
+
+.grid__col--4.theme__colors {
+  background-color: #a6ff47; }
+
+.grid__col--5.theme__colors {
+  background-color: #68ff47; }
+
+.grid__col--6.theme__colors {
+  background-color: #47ff63; }
+
+.grid__col--7.theme__colors {
+  background-color: #47ffa0; }
+
+.grid__col--8.theme__colors {
+  background-color: #47ffde; }
+
+.grid__col--9.theme__colors {
+  background-color: #47e3ff; }
+
+.grid__col--10.theme__colors {
+  background-color: #47a6ff; }
+
+.grid__col--11.theme__colors {
+  background-color: #4768ff; }
+
+.grid__col--12.theme__colors {
+  background-color: #6347ff; }
+
 @media (min-width: 768px) {
   .centered {
     flex-grow: 0;
@@ -430,7 +474,12 @@ template {
   flex-direction: column; }
   @media (min-width: 768px) {
     .nav {
-      flex-direction: row; } }
+      flex-direction: row;
+      justify-content: flex-end;
+      padding-top: 30px; } }
+
+nav {
+  margin-left: auto; }
 
 .nav__item {
   text-align: center; }

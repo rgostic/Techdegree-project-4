@@ -7,12 +7,12 @@
   font-weight: bold;
   font-family: $font-copy;
   padding: 0.7em 0;
-  margin: $gutter 0;
+  margin: ($gutter / 2) 0;
   cursor: pointer;
   border-radius: 5px;
 
   @media (min-width: 768px) {
-    display: inline;
+    display: inline-block;
     width: 20%;
   }
 }
