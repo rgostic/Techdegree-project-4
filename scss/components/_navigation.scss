@@ -1,0 +1,21 @@
+.nav {
+  display:flex;
+  flex-direction: column;
+}
+
+.nav__item {
+  text-align: center;
+
+  a {
+    padding: .8em 1em;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    color: $black;
+  }
+
+  &:first-child a {
+    color: $white;
+    background-color: $color-primary;
+  }
+}

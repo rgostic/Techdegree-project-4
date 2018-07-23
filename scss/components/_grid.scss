@@ -1,0 +1,10 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  margin: $gutter 0;
+}
