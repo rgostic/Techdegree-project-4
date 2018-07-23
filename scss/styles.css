@@ -317,6 +317,10 @@ template {
   margin: 20px 0;
   cursor: pointer;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+      display: inline;
+      width: 20%; } }
 
 .btn--default {
   background-color: #58e1c1; }
@@ -352,12 +356,60 @@ template {
 
 .container {
   width: 90%;
+  max-width: 1000px;
   margin: 0 auto; }
 
 .grid__row {
   display: flex;
-  flex-direction: column;
   margin: 20px 0; }
+  @media (min-width: 768px) {
+    .grid__row {
+      flex-direction: row; } }
+
+.grid__col--1, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--11, .grid__col--12 {
+  display: flex;
+  flex-direction: column; }
+
+.grid__col--1 {
+  flex: 1 8.3333333333%; }
+
+.grid__col--2 {
+  flex: 1 16.6666666667%; }
+
+.grid__col--3 {
+  flex: 1 25%; }
+
+.grid__col--4 {
+  flex: 1 33.3333333333%; }
+
+.grid__col--5 {
+  flex: 1 41.6666666667%; }
+
+.grid__col--6 {
+  flex: 1 50%; }
+
+.grid__col--7 {
+  flex: 1 58.3333333333%; }
+
+.grid__col--8 {
+  flex: 1 66.6666666667%; }
+
+.grid__col--9 {
+  flex: 1 75%; }
+
+.grid__col--10 {
+  flex: 1 83.3333333333%; }
+
+.grid__col--11 {
+  flex: 1 91.6666666667%; }
+
+.grid__col--12 {
+  flex: 1 100%; }
+
+@media (min-width: 768px) {
+  .centered {
+    flex-grow: 0;
+    margin: 0 auto; } }
 
 .img--logo {
   margin: 20px auto;
@@ -376,6 +428,9 @@ template {
 .nav {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 768px) {
+    .nav {
+      flex-direction: row; } }
 
 .nav__item {
   text-align: center; }
